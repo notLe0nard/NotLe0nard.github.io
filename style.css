@@ -5,6 +5,9 @@ body {
     height: 100vh;
     margin: 0;
     background: black;
+    background-image: url('images-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 button {
     padding: 10px 20px;

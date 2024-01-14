@@ -109,3 +109,11 @@ body {
 *{
     transition: ease-in-out all 0.2s;
 }
+#secret_btn{
+    background: transparent;
+    width: 10vmin;
+    height: 10vmin;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

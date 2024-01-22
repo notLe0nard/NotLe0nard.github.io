@@ -30,10 +30,10 @@ async function startSite(){
 function secret(){
   kok++;
   if(kok == 5){
-    window.open('https://kappa.lol/z9nML.odp', '_blank');
+    
   }
   if(kok == 6){
-    window.open('https://kappa.lol/sReiX.pptx', '_blank');
+    
   }
   
 }

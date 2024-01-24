@@ -43,12 +43,13 @@ body {
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 #twitch{
     text-shadow: #850a9b 0px 0px 5vmin;
     border: solid #d900ff 0.8vmin;
     color: #d900ff;
     background: transparent;
-    box-shadow: inset 0px 0px 5vmin #850a9b, 0px 0px 5vmin #850a9b;
+    box-shadow: inset 0px 0px 5vmin #850a9b, 0px 0px 5vmin #850a9b; 
 }
 #twitch:hover {
     cursor: pointer;
@@ -106,6 +107,56 @@ body {
     box-shadow: #00d5ff 0px 0px 20vmin;
     transform: scale(1.01);
 }
+
+#dc_alert{
+    background: #000000;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    border-radius: 3vh;
+    box-shadow: 0px 0px 30px black;
+    gap: 1vmin;
+    padding: 2vmin;
+    opacity: 0;
+}
+
+#dc_info_text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6vmin;
+    background: linear-gradient(0deg, #00d5ff, #002c35);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-shadow: #00d5ff 0px 0px 5vmin;
+}
+
+#dc_escape{
+    cursor: pointer;
+    border-radius: 3vh;
+    width: 40%;
+    font-size: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: #00d5ff 0px 0px 5vmin;
+    border: solid #00d5ff 0.8vmin;
+    color: #00d5ff;
+    background: transparent;
+    box-shadow: inset 0px 0px 5vmin #00d5ff, 0px 0px 5vmin #00d5ff; 
+}
+#dc_escape:hover {
+    cursor: pointer;
+    background: #00d5ff;
+    color: #000e11;
+    border: solid #00d5ff 10px;
+    box-shadow: #00d5ff 0px 0px 20vmin;
+    transform: scale(1.01);
+}
+
 *{
     transition: ease-in-out all 0.2s;
 }

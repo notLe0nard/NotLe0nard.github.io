@@ -5,11 +5,20 @@ function openTwitch() {
 async function HASTDUAUFNACHTARAZGESP() {
   document.documentElement.requestFullscreen()
   document.getElementById("video").style.opacity = "1"
+  document.getElementById("main_container").style.opacity = "0"
+  document.getElementById("main_container").style.cursor = "none"
+  document.getElementById("title").style.cursor = "none"
+  document.getElementById("HASTDUAUFNACHTARAZGESP").style.cursor = "none"
+
   document.getElementById("video").style.width = "100%"
   document.getElementById("video").style.height = "100%"
 
   document.getElementById("video").play()
   await sleep(13000);
+  document.getElementById("main_container").style.opacity = "1"
+  document.getElementById("main_container").style.cursor = "default"
+  document.getElementById("title").style.cursor = "default"
+  document.getElementById("HASTDUAUFNACHTARAZGESP").style.cursor = "default"
   document.getElementById("video").style.opacity = "0"
   document.getElementById("video").style.width = "0%"
   document.getElementById("video").style.height = "0%"

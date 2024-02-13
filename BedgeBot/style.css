@@ -1,0 +1,43 @@
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+  background: rgb(10, 10, 10);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p, h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.1em;
+  color: #fffffe;
+}
+
+h1{
+  font-size: 4em;
+}
+
+.command{
+  font-size: 3em;
+}
+
+.command:hover{
+  font-size: 3.5em;
+  color: #44f192;
+}
+
+.description:hover{
+  font-size: 2.3em;
+  color: #44f192;
+}
+
+
+.description{
+  font-size: 2em;
+}
+
+*{
+  transition: ease all 0.3s;
+}

@@ -1,12 +1,45 @@
 body{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 0;
   padding: 0;
   cursor: crosshair;
-  background: rgb(10, 10, 10);
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: rgb(29, 29, 29);
+}
+
+#main{
+  width: 70%;
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 5em;
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+}
+
+#commands_button, #home_button{
+  font-size: 1.8em;
+  background: black;
+  border: 0.1em solid white;
+  border-radius: 0.2em;
+}
+
+#heading{
+  font-size: 2em;
+}
+
+#bedge_logo{
+  width: 4em;
 }
 
 p, h1{
@@ -20,23 +53,23 @@ h1{
 }
 
 .command{
-  font-size: 3em;
+  font-size: 2em;
+}
+.description{
+  font-size: 1em;
 }
 
 .command:hover{
-  font-size: 3.5em;
-  color: #44f192;
-}
-
-.description:hover{
   font-size: 2.3em;
   color: #44f192;
 }
-
-
-.description{
-  font-size: 2em;
+.description:hover{
+  font-size: 1.3em;
+  color: #44f192;
 }
+
+
+
 
 *{
   transition: ease all 0.3s;

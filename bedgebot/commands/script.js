@@ -146,6 +146,11 @@ const commands = [
         description: "twitchtracker.com/[kanal]/streams",
         category: "Jeder",
     },
+    {
+        name: "#bedgis",
+        description: "Dir wird eine zufällige Anzahl zwischen 0 und 1000 Bedgi's zugeschrieben. Danach musst du eine Stunde warten, bis du wieder den Command benutzen kannst.",
+        category: "Jeder",
+    },
 ];
 
 

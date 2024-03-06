@@ -17,7 +17,7 @@ const commands = [
         category: "Jeder",
     },   
     {
-        name: "#versiom",
+        name: "#version",
         description: "Die aktuelle Version vom Bot.",
         category: "Jeder",
     }, 
@@ -104,7 +104,7 @@ const commands = [
     {
         name: "#prefix",
         description: "Ändert den Prefix des Bots. Default: #",
-        category: "Owner",
+        category: "Mod",
     },
     {
         name: "#restart",

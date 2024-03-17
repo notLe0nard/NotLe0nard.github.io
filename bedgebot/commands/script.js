@@ -151,6 +151,36 @@ const commands = [
         description: "Dir wird eine zufällige Anzahl zwischen 0 und 1000 Bedgi's zugeschrieben. Danach musst du eine Stunde warten, bis du wieder den Command benutzen kannst.",
         category: "Jeder",
     },
+    {
+        name: "#gamba [Anzahl / all]",
+        description: "Glücksspiel!",
+        category: "Jeder",
+    },
+    {
+        name: "#math [Aufgabe]",
+        description: "Berechnet eine Mathe Aufgabe",
+        category: "Jeder",
+    },
+    {
+        name: "#chatis",
+        description: "Generiert ein Chat overlay",
+        category: "",
+    },
+    {
+        name: "#addchannel",
+        description: "Fügt den bot in einem Kanal hinzu.",
+        category: "Owner",
+    },
+    {
+        name: "#rainbow",
+        description: "🌈",
+        category: "Mod",
+    },
+    {
+        name: "#user [User]",
+        description: "Informationen über einen User.",
+        category: "Jeder",
+    },
 ];
 
 

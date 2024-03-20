@@ -216,3 +216,71 @@ searchInput.addEventListener("keyup", (event) => {
     );
     renderCommands(filteredCommands);
 });
+
+stepSize = 10000
+const HUE_SHIFT_RANGE = 30; // Adjust for larger/smaller hue changes
+imageWidth = 1000
+imageHeight = 1000
+function randomizePosition(element) {
+    const image = document.getElementById(element);
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    console.log(windowWidth)
+    const imageWidth = image.clientWidth;
+    const imageHeight = image.clientHeight;
+  
+    // Generate random direction values between -1 and 1 (inclusive)
+    const randomXDirection = Math.random() * 2 - 1;
+    const randomYDirection = Math.random() * 2 - 1;
+  
+    // Calculate potential new positions based on step size and direction
+    const potentialLeft = image.offsetLeft + randomXDirection * stepSize;
+    const potentialTop = image.offsetTop + randomYDirection * stepSize;
+  
+    // Ensure the image stays within window boundaries
+    let newLeft = Math.random() * windowWidth - (imageWidth / 2);
+    let newTop = Math.random() * windowHeight - (imageHeight / 2);
+    console.log(newLeft)
+
+    // Generate random rotation between -180 and 180 degrees
+    const randomRotation = Math.floor(Math.random() * 360) - 180;
+
+
+    // Set the image position using style
+    image.style.position = "absolute";
+    image.style.left = `${newLeft}px`;
+    image.style.top = `${newTop}px`;
+    image.style.transform = `rotate(${randomRotation}deg)`;
+}
+
+const follower = document.getElementById("ball1");
+
+window.addEventListener("mousemove", (event) => {
+  const image = document.getElementById("ball1");
+  const imageWidth = image.clientWidth;
+  const imageHeight = image.clientHeight;
+  follower.style.left = (event.pageX - (imageWidth / 2)) + "px";
+  follower.style.top = (event.pageY - (imageHeight / 2)) + "px";
+});
+
+function Sleep(milliseconds) {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+function randomize(){
+    randomizePosition("ball2");
+    randomizePosition("ball3");
+    randomizePosition("ball4");
+    randomizePosition("ball5");
+    randomizePosition("ball6");
+    randomizePosition("ball7");
+    randomizePosition("ball8");
+    randomizePosition("ball9");
+}
+
+async function start(){
+    document.getElementById("background").style.opacity = "1"
+    randomize()
+    setInterval(randomize, 5000);
+}
+start()

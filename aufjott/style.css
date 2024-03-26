@@ -1,0 +1,24 @@
+body{
+    background: transparent;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    height: 600px;
+    width: 800px;
+    background: rgba(0, 0, 0, 0.644);
+    background-image: url("https://www.gommehd.net/place/api/image/?lu=undefined");
+    background-position: 4900px 900px;
+    background-size: 13000px;
+
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    border-radius: 20px;
+    margin: 0;
+}

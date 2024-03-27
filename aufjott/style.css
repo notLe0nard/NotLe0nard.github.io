@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 
-div{
+#aufjott{
     height: 600px;
     width: 800px;
     background: rgba(0, 0, 0, 0.644);
@@ -21,4 +21,16 @@ div{
     -ms-interpolation-mode: nearest-neighbor;
     border-radius: 20px;
     margin: 0;
+}
+#live{
+    background: red;
+    width: 70px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+    left: 250px;
 }

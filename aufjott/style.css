@@ -21,6 +21,31 @@ body{
     -ms-interpolation-mode: nearest-neighbor;
     border-radius: 20px;
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#aufjott2{
+    filter: saturate(0.3);
+    
+    height: 600px;
+    width: 800px;
+    background: rgba(0, 0, 0, 0.644);
+    background-image: url("https://kappa.lol/9fwS3");
+    background-position: 6500px 3300px;
+    background-size: 15000px;
+
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
 }
 #live{
     background: red;

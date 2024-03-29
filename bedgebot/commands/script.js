@@ -137,7 +137,7 @@ const commands = [
         category: "Jeder",
     },
     {
-        name: "#follower",
+        name: "#followers",
         description: "Wie viele Follower der Kanal hat.",
         category: "Jeder",
     },

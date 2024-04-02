@@ -23,6 +23,12 @@ body{
     font-variation-settings:"wdth" 100;
     scroll-behavior: smooth;
 }
-p{
+p, span{
     margin: 0;
+    text-shadow: 1px 1px 5px black;
+    margin: 5px;
+}
+img{
+    filter: drop-shadow(1px 1px 5px #222);
+    height: 40px;
 }

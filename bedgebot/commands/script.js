@@ -1,5 +1,3 @@
-// script.js
-
 const commands = [
     {
         name: "#time",
@@ -226,9 +224,4 @@ function Sleep(milliseconds) {
 }
 
 
-async function start(){
-    document.getElementById("black").style.opacity = "0"
-    await Sleep(300)
-    document.getElementById("headbar").style.opacity = "1"
-}
-start()
+
